@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f23b9cabc9f4645efb9bdd9a6bfa98b3
-timeCreated: 1494690647
-licenseType: Pro
+timeCreated: 1495381464
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4
@@ -28,18 +28,18 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-  spriteExtrude: 1
-  spriteMeshType: 1
+  spriteExtrude: 18
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 2, y: 0, z: 1, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -54,14 +54,91 @@ TextureImporter:
     maxTextureSize: 2048
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline: []
+    outline:
+    - - {x: 177, y: 26}
+      - {x: 163, y: 21}
+      - {x: 149, y: -60}
+      - {x: 78, y: -62}
+      - {x: 50, y: -35}
+      - {x: 50, y: 1}
+      - {x: 69, y: 89}
+      - {x: 92, y: 89}
+      - {x: 114, y: 84}
+      - {x: 130, y: 11}
+      - {x: 144, y: -1}
+      - {x: 153, y: 36}
+      - {x: 165, y: 57}
+      - {x: 200, y: 85}
+      - {x: 200, y: 127}
+      - {x: 120, y: 129}
+      - {x: 12, y: 129}
+      - {x: -49, y: 114}
+      - {x: -137, y: 123}
+      - {x: -180, y: 121}
+      - {x: -197, y: 129}
+      - {x: -200, y: 129}
+      - {x: -200, y: 74}
+      - {x: -187, y: -43}
+      - {x: -200, y: -72}
+      - {x: -200, y: -129}
+      - {x: 200, y: -129}
+      - {x: 200, y: -66}
+      - {x: 181, y: 18}
+    - - {x: -30, y: 46}
+      - {x: -44, y: 40}
+      - {x: -44, y: 37}
+      - {x: -42, y: 35}
+      - {x: -29, y: 35}
+      - {x: -25, y: 37}
+      - {x: -22, y: 42}
+      - {x: -22, y: 46}
   spritePackingTag: 
   userData: 
   assetBundleName: 

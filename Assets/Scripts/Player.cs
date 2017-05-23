@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Player: MonoBehaviour {
 
-	public float maxspeed = 3f;
-	public float jumpForce = 3f;
+	public float maxspeed = 5f;
+	public float jumpForce = 4f;
 	public bool jump = false;
 	float jumpTime = 0f;
 	float maxJumpTime = 0.8f;
@@ -16,10 +16,14 @@ public class Player: MonoBehaviour {
 	private Rigidbody2D rb2d;
 	private Animator anim;
 	public bool grounded = true;
+	public float spawnX;
+	public float spawnY;
 	// Use this for initialization
 	void Start () {
 		rb2d = this.GetComponent<Rigidbody2D>();
 		anim = this.GetComponent<Animator>();
+		spawnX = transform.position.x;
+		spawnY = transform.position.y;
 	}
 
 	// Update is called once per frame
@@ -45,7 +49,7 @@ public class Player: MonoBehaviour {
 				jumpTime += Time.deltaTime;
 			if (jumpTime < maxJumpTime) {
 				Vector2 up = rb2d.velocity;
-				up.y = jumpForce * (1.0f - jumpTime / maxJumpTime);
+				up.y = jumpForce * (1.2f - jumpTime / maxJumpTime);
 				rb2d.velocity = up;
 			}
 		} else {
@@ -62,5 +66,11 @@ public class Player: MonoBehaviour {
 		Vector3 myScale = transform.localScale;
 		myScale.x *= -1;
 		transform.localScale = myScale;
+	}
+	public void OnCollisionEnter2D(Collision2D col){
+		if (col.gameObject.name == "Orc-1" || col.gameObject.name == "OffGround") {
+			transform.position = new Vector3 (spawnX, spawnY, transform.position.z);
+		}
+	
 	}
 } 
